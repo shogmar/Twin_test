@@ -1,6 +1,6 @@
 <?php
 /**
- * PSR-2 Interface Logger
+ * PSR-3 Interface Logger
  * Если нужна память, то просто удаляем ненужную функциональность
  */
 interface LoggerInterface
