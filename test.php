@@ -94,7 +94,8 @@ class Sequence
      */
     private function validation()
     {
-        if(($this->count_arr_numbers = count($this->arr_numbers)) < 1) {
+        $this->count_arr_numbers = count($this->arr_numbers);
+        if($this->count_arr_numbers < 1) {
             $this->logger->error("Массив чисел пустой");
             return 'error';
         }
@@ -117,8 +118,7 @@ class Sequence
         if($this->validation() === 'error') return FALSE;
         //Сортируем и срезаем нужное кол-во
         sort($this->arr_numbers, SORT_NATURAL);
-        $srez = $this->count_arr_numbers - $this->count_max_values;
-        $this->max_numbers = array_slice($this->arr_numbers, $srez);
+        $this->max_numbers = array_slice($this->arr_numbers, $this->count_arr_numbers - $this->count_max_values);
 
         return $this->max_numbers;
     }
