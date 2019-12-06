@@ -1,6 +1,6 @@
 <?php
 /**
- * PSR-2 Interface
+ * PSR-2 Interface Logger
  * Если нужна память, то просто удаляем ненужную функциональность
  */
 interface LoggerInterface
@@ -17,7 +17,7 @@ interface LoggerInterface
 }
 
 /**
- * Логер
+ * Логер класс
  */
 class Logger implements LoggerInterface
 {
