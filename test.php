@@ -50,21 +50,21 @@ class Sequence
      * 
      * @var [int]
      */
-    private int $count_max_values;
+    private $count_max_values;
 
     /**
      * Массив натуральных чисел
      *
      * @var [array]
      */
-    private array $arr_numbers;
+    private $arr_numbers;
 
     /**
      * Массив максимальных натуральных чисел
      *
      * @var [array]
      */
-    private array $max_numbers;
+    private $max_numbers;
 
     /**
      * Logger
